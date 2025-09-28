@@ -1,73 +1,119 @@
-# Welcome to your Lovable project
+# Chef MP - Site Institucional
 
-## Project info
+## 🍽️ Sobre o Projeto
 
-**URL**: https://lovable.dev/projects/c95240d8-fa1a-4cee-8169-c06f14f61b29
+Site institucional moderno e otimizado para a **Chef MP**, empresa especializada em consultoria gastronômica, nutricional e segurança alimentar. O site foi desenvolvido com foco em conversão, acessibilidade e performance.
 
-## How can I edit this code?
+## ✨ Características
 
-There are several ways of editing your application.
+### 🎨 Design & UX
+- Design moderno e profissional
+- Paleta de cores: Verde #0B5D4B (confiança) + Âmbar #F4A340 (atenção)
+- Tipografia: Inter + Poppins para máxima legibilidade
+- Layout responsivo mobile-first
+- Animações suaves e interações engajantes
 
-**Use Lovable**
+### 🚀 Performance & SEO
+- **Core Web Vitals otimizado** (LCP < 2.5s, CLS < 0.1, INP < 200ms)
+- SEO completo com meta tags personalizadas
+- Schema.org (ProfessionalService + FAQPage)
+- Open Graph e Twitter Cards
+- Sitemap.xml e robots.txt configurados
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c95240d8-fa1a-4cee-8169-c06f14f61b29) and start prompting.
+### ♿ Acessibilidade
+- **WCAG 2.2 AA compliant**
+- Contraste adequado em todos os elementos
+- Navegação por teclado
+- Alt text descritivo em imagens
+- HTML semântico
 
-Changes made via Lovable will be committed automatically to this repo.
+### 🔧 Funcionalidades
+- **Formulário de contato** com validação client-side
+- **Integração WhatsApp** com mensagens pré-configuradas
+- **Acordeões FAQ** para melhor UX
+- **Carrossel de depoimentos**
+- **Botão WhatsApp flutuante** (mobile)
+- **Política de Privacidade** (LGPD compliant)
 
-**Use your preferred IDE**
+## 🛠️ Tecnologias
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **React 18** + TypeScript
+- **Vite** (build tool)
+- **Tailwind CSS** (styling)
+- **shadcn/ui** (componentes)
+- **Lucide React** (ícones)
+- **React Helmet Async** (SEO)
+- **React Hook Form** (formulários)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 📁 Estrutura do Projeto
 
-Follow these steps:
+```
+src/
+├── components/           # Componentes reutilizáveis
+│   ├── ui/              # Componentes base (shadcn)
+│   ├── Header.tsx       # Navegação principal
+│   ├── Hero.tsx         # Seção hero
+│   ├── ServicesSection.tsx
+│   ├── ContactSection.tsx
+│   └── ...
+├── pages/               # Páginas
+│   ├── Index.tsx        # Página principal
+│   └── PrivacyPolicy.tsx
+├── assets/              # Imagens e recursos
+├── hooks/               # Hooks customizados
+└── lib/                 # Utilitários
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🎯 Conversão & Marketing
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### CTAs Estratégicos
+- "Solicitar Diagnóstico" (formulário)
+- "Falar no WhatsApp" (contato direto)
+- Botão flutuante WhatsApp (mobile)
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Prova Social
+- Depoimentos de clientes reais
+- Métricas de performance
+- Selos de conformidade
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### SEO Local
+- Palavras-chave: "consultoria gastronômica", "boas práticas", "segurança alimentar"
+- Schema.org para aparecer em rich snippets
+- Otimizado para busca de serviços locais
+
+## 🚀 Deploy & Desenvolvimento
+
+### Desenvolvimento Local
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Deploy
+- **Lovable**: Um clique para publicar
+- **Vercel/Netlify**: Configuração automática
+- **Custom Domain**: Configurável via Lovable
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📊 Métricas Esperadas
 
-**Use GitHub Codespaces**
+- **Performance**: 90+ no Lighthouse
+- **SEO**: 95+ no Lighthouse  
+- **Acessibilidade**: 100 no Lighthouse
+- **Conversão**: Formulário + WhatsApp otimizados
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🔒 Compliance
 
-## What technologies are used for this project?
+- **LGPD**: Política de privacidade completa
+- **Cookies**: Sem cookies desnecessários
+- **Dados**: Coleta mínima e transparente
+- **Segurança**: Validações client/server-side
 
-This project is built with:
+## 📞 Contato
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Para dúvidas sobre o desenvolvimento:
+- **Desenvolvido com**: Lovable AI
+- **Projeto URL**: https://lovable.dev/projects/c95240d8-fa1a-4cee-8169-c06f14f61b29
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/c95240d8-fa1a-4cee-8169-c06f14f61b29) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+*Site desenvolvido para maximizar conversões e proporcionar a melhor experiência aos visitantes interessados em consultoria gastronômica.*

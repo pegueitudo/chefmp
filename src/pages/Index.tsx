@@ -1,12 +1,39 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
+import ChallengesSection from "@/components/ChallengesSection";
+import ServicesSection from "@/components/ServicesSection";
+import ProcessSteps from "@/components/ProcessSteps";
+import ErrorsAccordion from "@/components/ErrorsAccordion";
+import BenefitsSection from "@/components/BenefitsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import AboutSection from "@/components/AboutSection";
+import CTASection from "@/components/CTASection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import SEOMetadata from "@/components/SEOMetadata";
+import StructuredData from "@/components/StructuredData";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <SEOMetadata />
+      <StructuredData type="faq" />
+      <Header />
+      <main>
+        <Hero />
+        <ChallengesSection />
+        <ServicesSection />
+        <ProcessSteps />
+        <ErrorsAccordion />
+        <BenefitsSection />
+        <TestimonialsSection />
+        <AboutSection />
+        <CTASection />
+        <ContactSection />
+      </main>
+      <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 };
