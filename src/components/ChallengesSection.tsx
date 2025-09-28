@@ -35,11 +35,8 @@ const ChallengesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
-            Principais Desafios do Setor de Alimentação
+            Sua operação já sofreu com algum desses problemas?
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Entendemos os desafios únicos que seu negócio gastronômico enfrenta diariamente
-          </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

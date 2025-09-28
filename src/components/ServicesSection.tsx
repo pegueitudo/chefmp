@@ -60,10 +60,10 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
-            O que Entregamos
+            Então, nós podemos te ajudar
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Soluções completas e personalizadas para transformar sua cozinha em um negócio seguro e lucrativo
+            Combinamos diagnóstico técnico, consultoria prática e treinamentos para que sua cozinha seja produtiva e sem riscos.
           </p>
         </div>
         
