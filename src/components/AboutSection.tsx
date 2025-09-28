@@ -41,7 +41,7 @@ const AboutSection = () => {
           <div className="bg-card rounded-2xl shadow-chef-lg p-8 mb-12">
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-foreground leading-relaxed mb-6">
-                A <strong className="text-primary">Chef MP</strong> é especializada em consultoria gastronômica, nutricional e segurança alimentar, 
+                O <strong className="text-primary">Chef MP</strong> é especializada em consultoria gastronômica, nutricional e segurança alimentar, 
                 com foco na implantação e monitoramento de Boas Práticas e Procedimentos Operacionais Padrão (POPs) 
                 para estabelecimentos do setor alimentício.
               </p>
