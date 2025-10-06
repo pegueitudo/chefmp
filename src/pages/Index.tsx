@@ -5,9 +5,7 @@ import ServicesSection from "@/components/ServicesSection";
 import ProcessSteps from "@/components/ProcessSteps";
 import ErrorsAccordion from "@/components/ErrorsAccordion";
 import BenefitsSection from "@/components/BenefitsSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import AboutSection from "@/components/AboutSection";
-import CTASection from "@/components/CTASection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -27,9 +25,7 @@ const Index = () => {
         <ProcessSteps />
         <ErrorsAccordion />
         <BenefitsSection />
-        <TestimonialsSection />
         <AboutSection />
-        <CTASection />
         <ContactSection />
       </main>
       <Footer />

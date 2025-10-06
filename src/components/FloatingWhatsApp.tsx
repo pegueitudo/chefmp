@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 const FloatingWhatsApp = () => {
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Olá! Estou navegando no site da Chef MP e gostaria de mais informações sobre os serviços de consultoria gastronômica.");
-    window.open(`https://wa.me/5511999999999?text=${message}`, '_blank');
+    window.open(`https://wa.me/5511943430405?text=${message}`, '_blank');
   };
 
   return (

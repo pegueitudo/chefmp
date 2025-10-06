@@ -101,7 +101,7 @@ const ContactSection = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Olá! Gostaria de agendar uma conversa sobre a consultoria gastronômica da Chef MP.");
-    window.open(`https://wa.me/5511999999999?text=${message}`, '_blank');
+    window.open(`https://wa.me/5511943430405?text=${message}`, '_blank');
   };
 
   return (
@@ -112,7 +112,7 @@ const ContactSection = () => {
             Vamos Organizar sua Cozinha e Aumentar sua Margem?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Solicite seu diagnóstico gratuito e descubra como podemos transformar sua operação
+            Solicite seu diagnóstico e descubra como podemos transformar sua operação
           </p>
         </div>
 
@@ -132,7 +132,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium">WhatsApp</p>
-                    <p className="text-sm text-muted-foreground">(11) 99999-9999</p>
+                    <p className="text-sm text-muted-foreground">(11) 94343-0405</p>
                   </div>
                 </div>
                 

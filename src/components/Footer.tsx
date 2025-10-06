@@ -5,7 +5,7 @@ const Footer = () => {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Olá! Gostaria de mais informações sobre os serviços da Chef MP.");
-    window.open(`https://wa.me/5511999999999?text=${message}`, '_blank');
+    window.open(`https://wa.me/5511943430405?text=${message}`, '_blank');
   };
 
   return (
@@ -52,11 +52,6 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#depoimentos" className="text-primary-foreground/80 hover:text-primary-foreground transition-chef">
-                  Depoimentos
-                </a>
-              </li>
-              <li>
                 <a href="#contato" className="text-primary-foreground/80 hover:text-primary-foreground transition-chef">
                   Contato
                 </a>
@@ -69,22 +64,13 @@ const Footer = () => {
             <h4 className="font-poppins font-semibold mb-4">Serviços</h4>
             <ul className="space-y-3">
               <li>
-                <span className="text-primary-foreground/80">Diagnóstico Inicial</span>
+                <span className="text-primary-foreground/80">Diagnóstico</span>
               </li>
               <li>
-                <span className="text-primary-foreground/80">Consultoria Mensal</span>
+                <span className="text-primary-foreground/80">Consultoria mensal</span>
               </li>
               <li>
-                <span className="text-primary-foreground/80">Treinamentos</span>
-              </li>
-              <li>
-                <span className="text-primary-foreground/80">Boas Práticas</span>
-              </li>
-              <li>
-                <span className="text-primary-foreground/80">Fichas Técnicas</span>
-              </li>
-              <li>
-                <span className="text-primary-foreground/80">Controle Sanitário</span>
+                <span className="text-primary-foreground/80">Treinamento</span>
               </li>
             </ul>
           </div>
@@ -95,7 +81,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center">
                 <MessageCircle className="w-4 h-4 mr-3 text-secondary" />
-                <span className="text-primary-foreground/80">(11) 99999-9999</span>
+                <span className="text-primary-foreground/80">(11) 94343-0405</span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-3 text-secondary" />
@@ -127,10 +113,6 @@ const Footer = () => {
               <a href="/politica-privacidade" className="text-primary-foreground/80 hover:text-primary-foreground transition-chef">
                 Política de Privacidade
               </a>
-              <span className="text-primary-foreground/40">|</span>
-              <span className="text-primary-foreground/80">
-                LGPD Compliance
-              </span>
             </div>
           </div>
         </div>

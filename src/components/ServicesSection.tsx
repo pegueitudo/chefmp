@@ -1,8 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Search, Repeat, GraduationCap, MessageCircle } from "lucide-react";
-import trainingImage from "@/assets/training-team.jpg";
-import documentationImage from "@/assets/documentation.jpg";
+import diagnosticoImage from "@/assets/diagnostico-inicial.jpg";
+import consultoriaImage from "@/assets/consultoria-mensal.jpg";
+import treinamentoImage from "@/assets/treinamento.jpg";
 
 const ServicesSection = () => {
   const services = [
@@ -17,7 +18,7 @@ const ServicesSection = () => {
         "Relatório de não conformidades",
         "Plano de ação por prioridade"
       ],
-      image: documentationImage,
+      image: diagnosticoImage,
       price: "A partir de R$ 890"
     },
     {
@@ -31,7 +32,7 @@ const ServicesSection = () => {
         "Padronização de cardápios",
         "Relatórios mensais com indicadores"
       ],
-      image: documentationImage,
+      image: consultoriaImage,
       price: "A partir de R$ 1.490/mês"
     },
     {
@@ -45,18 +46,18 @@ const ServicesSection = () => {
         "Padronização por fichas técnicas",
         "Preparação para fiscalização"
       ],
-      image: trainingImage,
+      image: treinamentoImage,
       price: "A partir de R$ 390/turma"
     }
   ];
 
   const handleWhatsApp = (service: string) => {
     const message = encodeURIComponent(`Olá! Tenho interesse no serviço de ${service}. Gostaria de mais informações sobre valores e cronograma.`);
-    window.open(`https://wa.me/5511999999999?text=${message}`, '_blank');
+    window.open(`https://wa.me/5511943430405?text=${message}`, '_blank');
   };
 
   return (
-    <section id="servicos" className="py-16 bg-background">
+    <section id="servicos" className="py-16 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">

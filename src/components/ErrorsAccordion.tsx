@@ -18,11 +18,11 @@ const ErrorsAccordion = () => {
     },
     {
       title: "Falta de controle de temperatura e amostras",
-      content: "A ausência de monitoramento contínuo de temperatura de equipamentos e a não coleta de amostras obrigatórias são infrações graves que podem resultar em interdição do estabelecimento."
+      content: "A ausência de monitoramento contínuo de temperaturas e a coleta em guarda de amostras de maneira inadequada, podem resultar em multas por não atender a legislação sanitária."
     },
     {
       title: "Ausência de fichas técnicas ou registro de preparo",
-      content: "Não possuir fichas técnicas detalhadas dos preparos, com informações nutricionais e procedimentos padronizados, é uma violação que compromete a qualidade e segurança dos alimentos."
+      content: "Não possuir fichas técnicas detalhadas dos preparos, com informações nutricionais e procedimentos padronizados, compromete a qualidade e a padronização dos preparos, comprometendo a segurança dos alimentos."
     },
     {
       title: "Uso incorreto ou incompleto de uniformes e EPIs",

@@ -11,13 +11,12 @@ const Header = () => {
     { href: "#servicos", label: "Serviços" },
     { href: "#por-que-escolher", label: "Por que nos escolher" },
     { href: "#quem-somos", label: "Quem somos" },
-    { href: "#depoimentos", label: "Depoimentos" },
     { href: "#contato", label: "Contato" },
   ];
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Olá! Gostaria de mais informações sobre a consultoria gastronômica da Chef MP.");
-    window.open(`https://wa.me/5511999999999?text=${message}`, '_blank');
+    window.open(`https://wa.me/5511943430405?text=${message}`, '_blank');
   };
 
   return (

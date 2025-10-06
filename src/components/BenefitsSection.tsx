@@ -36,16 +36,8 @@ const BenefitsSection = () => {
     {
       icon: Brain,
       title: "Tranquilidade para o Gestor",
-      description: "Liberdade para focar no crescimento enquanto cuidamos da operação"
+      description: "Liberdade para focar no crescimento do estabelecimento"
     }
-  ];
-
-  const metrics = [
-    { value: "100%", label: "Conformidade sanitária" },
-    { value: "-30%", label: "Redução de desperdício" },
-    { value: "+25%", label: "Aumento da padronização" },
-    { value: "+40%", label: "Melhoria na lucratividade" },
-    { value: "+35%", label: "Produtividade da equipe" }
   ];
 
   return (
@@ -58,22 +50,6 @@ const BenefitsSection = () => {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Benefícios comprovados que transformam sua operação gastronômica
           </p>
-        </div>
-
-        {/* Metrics */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-16">
-          {metrics.map((metric, index) => (
-            <Card key={index} className="text-center shadow-chef-md hover:shadow-chef-lg transition-chef">
-              <CardContent className="p-6">
-                <div className="text-2xl md:text-3xl font-poppins font-bold text-primary mb-2">
-                  {metric.value}
-                </div>
-                <div className="text-sm text-muted-foreground">
-                  {metric.label}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
         </div>
         
         {/* Benefits Grid */}
