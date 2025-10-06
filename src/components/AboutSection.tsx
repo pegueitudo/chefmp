@@ -26,14 +26,14 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="quem-somos" className="py-16 bg-background">
+    <section id="quem-somos" className="py-16" style={{ backgroundColor: '#0C573D' }}>
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-poppins font-bold text-primary mb-4">
+            <h2 className="text-3xl md:text-4xl font-poppins font-bold text-white mb-4">
               Quem Somos
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-white">
               Especialistas em transformar cozinhas em operações seguras, eficientes e lucrativas
             </p>
           </div>

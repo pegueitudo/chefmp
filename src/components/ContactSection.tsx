@@ -7,7 +7,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { Send, MessageCircle, Mail, Phone, MapPin } from "lucide-react";
+import { Send, MessageCircle, Mail } from "lucide-react";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -20,6 +20,7 @@ const ContactSection = () => {
     state: "",
     operationType: "",
     mealsPerDay: "",
+    serviceInterest: "",
     painPoints: [] as string[],
     message: "",
     acceptTerms: false
@@ -86,6 +87,7 @@ const ContactSection = () => {
         state: "",
         operationType: "",
         mealsPerDay: "",
+        serviceInterest: "",
         painPoints: [],
         message: "",
         acceptTerms: false
@@ -100,7 +102,7 @@ const ContactSection = () => {
   };
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent("Olá! Gostaria de agendar uma conversa sobre a consultoria gastronômica da Chef MP.");
+    const message = encodeURIComponent("Olá! Gostaria de agendar uma conversa sobre a consultoria gastronômica do Chef MP.");
     window.open(`https://wa.me/5511943430405?text=${message}`, '_blank');
   };
 
@@ -143,16 +145,6 @@ const ContactSection = () => {
                   <div>
                     <p className="font-medium">E-mail</p>
                     <p className="text-sm text-muted-foreground">contato@chefmp.com.br</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center space-x-3">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                    <Phone className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="font-medium">Telefone</p>
-                    <p className="text-sm text-muted-foreground">(11) 3333-4444</p>
                   </div>
                 </div>
 
@@ -285,6 +277,21 @@ const ContactSection = () => {
                     </div>
                   </div>
 
+                  <div className="space-y-2">
+                    <Label htmlFor="serviceInterest">Serviço de interesse</Label>
+                    <Select value={formData.serviceInterest} onValueChange={(value) => setFormData(prev => ({ ...prev, serviceInterest: value }))}>
+                      <SelectTrigger>
+                        <SelectValue placeholder="Selecione o serviço" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="diagnostico">Diagnóstico Inicial</SelectItem>
+                        <SelectItem value="consultoria">Consultoria Mensal</SelectItem>
+                        <SelectItem value="treinamento">Treinamentos</SelectItem>
+                        <SelectItem value="todos">Todos os serviços</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+
                   <div className="space-y-3">
                     <Label>Principais dores (marque todas que se aplicam)</Label>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -322,7 +329,7 @@ const ContactSection = () => {
                       required
                     />
                     <Label htmlFor="terms" className="text-sm cursor-pointer leading-relaxed">
-                      Aceito ser contatado pela Chef MP via e-mail, WhatsApp e telefone para receber informações sobre serviços. 
+                      Aceito ser contatado pelo Chef MP via e-mail e WhatsApp para receber informações sobre serviços. 
                       Li e concordo com a <a href="/politica-privacidade" className="text-primary hover:underline">Política de Privacidade</a>.
                     </Label>
                   </div>

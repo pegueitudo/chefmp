@@ -9,7 +9,7 @@ const PrivacyPolicy = () => {
     <div className="min-h-screen bg-background">
       <SEOMetadata 
         title="Política de Privacidade - Chef MP | LGPD Compliance"
-        description="Política de Privacidade da Chef MP em conformidade com a LGPD. Transparência total sobre proteção e uso de dados pessoais."
+        description="Política de Privacidade do Chef MP em conformidade com a LGPD. Transparência total sobre proteção e uso de dados pessoais."
         canonical="/politica-privacidade"
         type="article"
       />

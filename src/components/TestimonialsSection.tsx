@@ -4,7 +4,7 @@ import { Star } from "lucide-react";
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      content: "Transformei a gestão da cozinha com as orientações da Chef MP. Hoje tenho total controle dos processos e minha equipe trabalha de forma muito mais organizada.",
+      content: "Transformei a gestão da cozinha com as orientações do Chef MP. Hoje tenho total controle dos processos e minha equipe trabalha de forma muito mais organizada.",
       author: "Gerente de Restaurante",
       location: "São Paulo - SP",
       rating: 5

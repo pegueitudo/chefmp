@@ -1,10 +1,10 @@
-import { MessageCircle, Mail, Phone, MapPin } from "lucide-react";
+import { MessageCircle, Mail } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent("Olá! Gostaria de mais informações sobre os serviços da Chef MP.");
+    const message = encodeURIComponent("Olá! Gostaria de mais informações sobre os serviços do Chef MP.");
     window.open(`https://wa.me/5511943430405?text=${message}`, '_blank');
   };
 
@@ -82,10 +82,6 @@ const Footer = () => {
               <div className="flex items-center">
                 <MessageCircle className="w-4 h-4 mr-3 text-secondary" />
                 <span className="text-primary-foreground/80">(11) 94343-0405</span>
-              </div>
-              <div className="flex items-center">
-                <Phone className="w-4 h-4 mr-3 text-secondary" />
-                <span className="text-primary-foreground/80">(11) 3333-4444</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-3 text-secondary" />

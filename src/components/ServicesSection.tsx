@@ -1,11 +1,14 @@
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Search, Repeat, GraduationCap, MessageCircle } from "lucide-react";
+import { Search, Repeat, GraduationCap, MessageCircle, Info } from "lucide-react";
 import diagnosticoImage from "@/assets/diagnostico-inicial.jpg";
 import consultoriaImage from "@/assets/consultoria-mensal.jpg";
 import treinamentoImage from "@/assets/treinamento.jpg";
+import ServiceModal from "./ServiceModal";
 
 const ServicesSection = () => {
+  const [selectedService, setSelectedService] = useState<any>(null);
   const services = [
     {
       icon: Search,
@@ -19,7 +22,52 @@ const ServicesSection = () => {
         "Plano de ação por prioridade"
       ],
       image: diagnosticoImage,
-      price: "A partir de R$ 890"
+      price: "A partir de R$ 200",
+      details: {
+        sections: [
+          {
+            title: "Estrutura física e layout",
+            items: ["Organização do espaço, fluxo de produção, áreas de risco cruzado."]
+          },
+          {
+            title: "Boas Práticas e higiene",
+            items: [
+              "Higienização de equipamentos, utensílios, superfícies e manipuladores.",
+              "Uso correto de EPIs."
+            ]
+          },
+          {
+            title: "Controle sanitário",
+            items: [
+              "Armazenamento de alimentos (estoque seco, câmaras frias, congelados).",
+              "Controle de temperatura e validade.",
+              "Coleta de amostras e registros obrigatórios."
+            ]
+          },
+          {
+            title: "Gestão de equipe",
+            items: [
+              "Dimensionamento de pessoal.",
+              "Escalas de trabalho e treinamento."
+            ]
+          },
+          {
+            title: "Documentação obrigatória",
+            items: [
+              "Manual de Boas Práticas (MBP).",
+              "Procedimentos Operacionais Padrão (POPs).",
+              "Planilhas de controle (temperatura, recebimento, higienização)."
+            ]
+          },
+          {
+            title: "Cardápio e Ficha Técnica",
+            items: [
+              "Cálculo nutricional, variedade, padronização de receitas.",
+              "Desperdício de alimentos e custo por refeição."
+            ]
+          }
+        ]
+      }
     },
     {
       icon: Repeat,
@@ -33,7 +81,48 @@ const ServicesSection = () => {
         "Relatórios mensais com indicadores"
       ],
       image: consultoriaImage,
-      price: "A partir de R$ 1.490/mês"
+      price: "A partir de R$ 1.490/mês",
+      details: {
+        sections: [
+          {
+            title: "Auditoria e monitoramento",
+            items: [
+              "Visitas programadas para verificar aplicação das Boas Práticas.",
+              "Avaliação de higiene, armazenamento, manipulação de alimentos e layout.",
+              "Ensinamos o colaborador a fazer o controle sanitário.",
+              "Coleta de amostras de alimentos.",
+              "Controle e registro de temperaturas (câmaras, balcões térmicos, preparo).",
+              "Checagem de validade e rotulagem.",
+              "Mostramos como gerir os estoque e compras de alimentos.",
+              "Quanto comprar.",
+              "Orientação no recebimento de mercadorias.",
+              "Planejamento de estocagem.",
+              "Minimização de perdas e desperdícios."
+            ]
+          },
+          {
+            title: "Ensinamos como ajustar seu cardápio",
+            items: [
+              "Cardápios equilibrados, nutritivos e saudável.",
+              "Criação de fichas técnicas de preparo (para padronizar receitas e custos)."
+            ]
+          },
+          {
+            title: "Gestão de equipe",
+            items: [
+              "Apoio na escala de trabalho, dimensionamento de pessoal.",
+              "Monitoramento da produtividade."
+            ]
+          },
+          {
+            title: "Relatórios de desempenho",
+            items: [
+              "Relatórios mensais com não conformidades, melhorias aplicadas e próximos passos.",
+              "Emissão de relatórios com indicadores (custos, desperdícios, conformidade sanitária)."
+            ]
+          }
+        ]
+      }
     },
     {
       icon: GraduationCap,
@@ -47,7 +136,48 @@ const ServicesSection = () => {
         "Preparação para fiscalização"
       ],
       image: treinamentoImage,
-      price: "A partir de R$ 390/turma"
+      price: "A partir de R$ 390/turma",
+      details: {
+        sections: [
+          {
+            title: "Boas Práticas de Manipulação de Alimentos",
+            items: [
+              "Higienização de mãos, utensílios, superfícies e EPIs.",
+              "Prevenção de contaminações cruzadas.",
+              "Higiene Pessoal e Postura Profissional na Cozinha.",
+              "Uniformes, uso de toucas, aventais, luvas.",
+              "Conduta ética e de segurança.",
+              "Controle de porções para reduzir desperdício.",
+              "Segurança Alimentar e Fiscalização Sanitária.",
+              "Atendimento ao Cliente, postura, comunicação cordial, foco na experiência do cliente."
+            ]
+          },
+          {
+            title: "Conservação de Alimentos",
+            items: [
+              "Controle de Temperaturas.",
+              "Regras para congelamento, refrigeração, descongelamento e preparo.",
+              "Importância do registro de planilhas de controle."
+            ]
+          },
+          {
+            title: "Recebimento e Armazenamento Correto de Mercadorias",
+            items: [
+              "Conferência de quantidade, qualidade, temperatura e validade.",
+              "Planejamento de produção."
+            ]
+          },
+          {
+            title: "Padronização de Receitas e Fichas Técnicas",
+            items: [
+              "Como seguir passo a passo as fichas técnicas e manter padrão e sabor.",
+              "Quanto comprar de insumos alimentares.",
+              "Controle de porções para reduzir desperdício.",
+              "Como se preparar para uma inspeção da Vigilância Sanitária."
+            ]
+          }
+        ]
+      }
     }
   ];
 
@@ -98,8 +228,18 @@ const ServicesSection = () => {
                   ))}
                 </ul>
                 
-                <div className="pt-4 border-t border-border">
-                  <p className="text-lg font-semibold text-primary mb-4">{service.price}</p>
+                <div className="pt-4 border-t border-border space-y-3">
+                  <p className="text-lg font-semibold text-primary">{service.price}</p>
+                  
+                  <Button 
+                    onClick={() => setSelectedService(service)}
+                    variant="outline"
+                    className="w-full"
+                  >
+                    <Info className="w-4 h-4 mr-2" />
+                    Ver Detalhes Completos
+                  </Button>
+                  
                   <Button 
                     onClick={() => handleWhatsApp(service.title)}
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
@@ -112,6 +252,14 @@ const ServicesSection = () => {
             </Card>
           ))}
         </div>
+        
+        {selectedService && (
+          <ServiceModal 
+            isOpen={!!selectedService}
+            onClose={() => setSelectedService(null)}
+            service={selectedService}
+          />
+        )}
       </div>
     </section>
   );

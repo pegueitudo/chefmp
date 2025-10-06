@@ -15,7 +15,7 @@ const Header = () => {
   ];
 
   const handleWhatsApp = () => {
-    const message = encodeURIComponent("Olá! Gostaria de mais informações sobre a consultoria gastronômica da Chef MP.");
+    const message = encodeURIComponent("Olá! Gostaria de mais informações sobre a consultoria gastronômica do Chef MP.");
     window.open(`https://wa.me/5511943430405?text=${message}`, '_blank');
   };
 

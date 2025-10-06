@@ -70,7 +70,7 @@ const StructuredData = ({ type = 'home' }: StructuredDataProps) => {
       },
       {
         "@type": "Question",
-        "name": "O que inclui o diagnóstico inicial da Chef MP?",
+        "name": "O que inclui o diagnóstico inicial do Chef MP?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "O diagnóstico inclui avaliação de estrutura física e layout, análise de Boas Práticas e higiene, controle sanitário, gestão de equipe, documentação obrigatória, cardápio e fichas técnicas, além de relatório de não conformidades e plano de ação priorizado."
